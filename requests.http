@@ -12,3 +12,13 @@ content-type: application/json
 
 ###
 GET http://localhost:3000/products/4
+
+###
+PATCH http://localhost:3000/products/8
+content-type: application/json
+
+{
+  "name": "socks",
+  "description": "warms your feet",
+  "price": 7
+}

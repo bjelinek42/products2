@@ -14,4 +14,13 @@ class ProductsController < ApplicationController
     product = Product.find(params[:id])
     render json: product
   end
+
+  def update
+    product = Product.find_by(id: params[:id])
+    product.name = params[:name]
+    product.description = params[:description]
+    product.price = params[:price]
+    product.save
+    render json: product
+  end
 end
