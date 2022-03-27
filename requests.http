@@ -9,3 +9,6 @@ content-type: application/json
   "description": "protects hands",
   "price": 10
 }
+
+###
+GET http://localhost:3000/products/4
