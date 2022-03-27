@@ -5,9 +5,16 @@ class ProductsController < ApplicationController
   end
 
   def create
-    product = Product.new(name: params[:name], description: params[:description], price: params[:price])
-    product.save
-    render json: product
+    if current_user
+      product = Product.new(name: params[:name], description: params[:description], price: params[:price], supplier_id: params[:supplier_id])
+      if product.save
+        render json: product
+      else
+        render json: {message: product.errors.full_messages}
+      end
+    else
+      render json: {message: "you must be logged in to create a product"}, status: :unauthorized
+    end
   end
 
   def show

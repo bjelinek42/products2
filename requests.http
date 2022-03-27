@@ -5,9 +5,10 @@ POST http://localhost:3000/products
 content-type: application/json
 
 {
-  "name": "gloves",
-  "description": "protects hands",
-  "price": 10
+  "name": "shoes",
+  "description": "protects feet",
+  "price": 25,
+  "supplier_id": 2 
 }
 
 ###
