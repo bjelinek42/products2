@@ -25,15 +25,15 @@ content-type: application/json
 }
 
 ###
-DELETE http://localhost:3000/products/9
+DELETE http://localhost:3000/products/11
 
 ### Users create (signup)
 POST http://localhost:3000/users.json
 Content-Type: application/json
 
 {
-  "name": "Katrina",
-  "email": "Katrina@test.com",
+  "name": "Howie",
+  "email": "howie@test.com",
   "password": "password",
   "password_confirmation": "password"
 }
@@ -43,6 +43,14 @@ POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
 {
-  "email": "ben@test.com",
+  "email": "katrina@test.com",
   "password": "password"
 }
+
+###
+POST http://localhost:3000/carted_products
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NDg1OTQ1NjN9.au1vRlSuEgL_GV2C0jhvSb7TdqFfFTOESM-xU22Ath4
+
+###
+GET http://localhost:3000/carted_products
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDg1OTUxMDR9.WWP3Jy7igYo5M5wsvVjUkj-2ef_IRLzgxMFF8Zc-dXc
