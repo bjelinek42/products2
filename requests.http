@@ -54,3 +54,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NDg1OTQ1N
 ###
 GET http://localhost:3000/carted_products
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDg1OTUxMDR9.WWP3Jy7igYo5M5wsvVjUkj-2ef_IRLzgxMFF8Zc-dXc
+
+###
+POST http://localhost:3000/orders
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NDg1OTQ1NjN9.au1vRlSuEgL_GV2C0jhvSb7TdqFfFTOESM-xU22Ath4
