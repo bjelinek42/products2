@@ -57,4 +57,6 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDg1OTUxM
 
 ###
 POST http://localhost:3000/orders
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NDg1OTQ1NjN9.au1vRlSuEgL_GV2C0jhvSb7TdqFfFTOESM-xU22Ath4
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDg2NTAyODB9.CC6piIs2VDA2d_o_RIjlF-ASW_MgQAdqNWogyMOfxH0
+
+#fixed and done with orders create controller
